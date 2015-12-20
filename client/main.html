@@ -1,0 +1,17 @@
+<head>
+  <title>tags Typeahead</title>
+</head>
+<body>
+  {{> addCard}}
+  {{#each Card}}
+    {{> card}}
+  {{/each}}
+</body>
+
+<template name="addCard">
+  {{> quickForm collection="Card" id="insertCardForm" type="insert"}}
+</template>
+
+<template name="card">
+  <li>stuff</li>
+</template>
